@@ -65,3 +65,38 @@
     }
 
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: .98;
+    visibility: hidden;
+
+    //js - add/remove .open when clicked
+    &.open {
+        visibility: visible;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: $primary-color;
+        list-style-type: none;
+        padding-right: 1rem;
+        //vertical - position off the page, at the top
+        transform: translateY(-100%);
+        @include transition-ease;
+
+        &.open {
+            //initial position
+            transform: translateY(0);
+        }
+
+    }
+}
