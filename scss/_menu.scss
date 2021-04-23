@@ -41,6 +41,27 @@
             @include transition-ease;
         }
 
+        //js - add/remove .open when clicked
+        &.open{
+            transform: rotate(720deg);
+            //hides middle bar
+            background: transparent;
+
+            //top bar
+            &::before {
+                //x-horizontal, y-vertical
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            //bottom bar - shorter
+            &::after {
+                //make bigger
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+
+        }
+
     }
 
 }
