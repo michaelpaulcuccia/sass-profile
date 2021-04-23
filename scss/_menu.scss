@@ -97,6 +97,44 @@
             //initial position
             transform: translateY(0);
         }
+        
+        &-item {
+            //items come in from right, x-horizontal
+            //links all the way off right side of page
+            transform: translateX(100vw);
+            @include transition-ease;
 
+            &.open{
+                //to initial position, from right
+                transform: translateX(0);
+            }
+
+            //js - add/remove .active when clicked
+            &.active > a {
+                //highlights current page
+                color: $secondary-color;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+
+    }
+}
+
+//iterate through each <li> and stagger
+@for $i from 1 through 4 {
+    .menu-nav-item:nth-child(#{$i}){
+        transition-delay: ($i * .1s) + .15s;
     }
 }
