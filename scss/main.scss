@@ -1,5 +1,6 @@
 @import 'config';
 @import 'home';
+@import 'menu';
 
 body {
     background: $primary-color;
@@ -36,6 +37,9 @@ main {
 
         a {
             padding: 0.4rem;
+
+            //effects hover
+            @include transition-ease;
 
             &:hover {
                 color: $secondary-color;

@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+/*
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+*/
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -29,6 +38,51 @@
 .home-name-last {
   color: #ff652f;
   font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger {
+  position: absolute;
+  right: 0;
+  top: .5rem;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 body {
@@ -68,6 +122,8 @@ main .social-icons {
 
 main .social-icons a {
   padding: 0.4rem;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 main .social-icons a:hover {
