@@ -195,6 +195,88 @@
           transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+
+.about-bio-image {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/mpc.png") center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about-bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about .about-me {
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1.2;
+}
+
+.about .about-me h1 {
+  margin-bottom: .5rem;
+}
+
+.about .about-me h3 {
+  padding: 0 1.5rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs-job {
+  background: #343434;
+  padding: .5rem;
+  border-bottom: 5px solid #ff652f;
+}
+
+.about .jobs-job h2, .about .jobs-job h3 {
+  margin: .5rem 0;
+}
+
+.about .jobs-job h6 {
+  margin: .3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
 body {
   background: #272727;
   color: #fff;
@@ -210,6 +292,10 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: #ff652f;
 }
 
 header {

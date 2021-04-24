@@ -1,0 +1,69 @@
+.about {
+    padding-bottom: 2rem;
+
+    &-bio-image {
+        height: 50vh;
+        width: 100%;
+        background: url('../img/mpc.png') center top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .about-me {
+        text-align: center;
+        margin: 1.5rem 0;
+        line-height: 1.2;
+
+        h1 {
+            margin-bottom: .5rem;
+        }
+
+        h3 {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .jobs {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 2rem;
+
+        &-job {
+            background: lighten($primary-color, 5%);
+            padding: .5rem;
+            border-bottom: 5px solid $secondary-color;
+
+            h2, h3 {
+                margin: .5rem 0;
+            }
+
+            h6 {
+                margin: .3rem 0;
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform: 
+        rotate(90deg)
+        //x, y
+        translate(-3rem, -5rem);
+    }
+   
+}
