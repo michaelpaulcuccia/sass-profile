@@ -2,11 +2,12 @@
     padding-bottom: 2rem;
 
     &-bio-image {
-        height: 30vh;
-        width: 100%;
-        background: url('../img/mpc.png') center top;
-        background-repeat: no-repeat;
-        background-size: contain;
+        // height: 40vh;
+        // width: 100%;
+        // background: url('../img/mpc.png') center top;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        height: 10vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,13 +15,14 @@
 
        .text-secondary {
            font-size: 2rem;
-           margin-bottom: 2rem;
+           font-weight: 500;
+        //    margin-bottom: .5rem;
        }
 
     }
 
     &-items {
-        width: 60vw;
+        width: 40vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-rows: 1fr;
@@ -77,6 +79,19 @@
         text-align: center;
     }
 
+    //second project has 3 icons and needs grid x3
+    &-btns-2 {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+    
     &-btn {
         opacity: 0;
         @include transition-ease;

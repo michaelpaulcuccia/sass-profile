@@ -22,7 +22,9 @@
         text-align: center;
         margin: 1.5rem 0;
         line-height: 1.2;
-
+        background: lighten($primary-color, 5%);
+        padding: .5rem;
+      
         h1 {
             margin-bottom: .5rem;
         }
@@ -33,6 +35,8 @@
         
         h3:nth-of-type(2){
            margin-top: .5rem; 
+           padding: .5rem;
+           border-bottom: 5px solid $secondary-color;
         }
     }
 
