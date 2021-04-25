@@ -12,13 +12,3 @@ $primary-text-color: #fff;
 @mixin transition-ease {
     transition: all .5s ease-in-out;
 }
-
-/*
-@function set-text-color($color) {
-    @if(lightness($color) > 40%) {
-        @return #000;
-    } @else {
-        @return #fff;
-    }
-}
-*/

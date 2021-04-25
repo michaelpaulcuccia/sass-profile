@@ -2,11 +2,6 @@
     padding-bottom: 2rem;
 
     &-bio-image {
-        // height: 40vh;
-        // width: 100%;
-        // background: url('../img/mpc.png') center top;
-        // background-repeat: no-repeat;
-        // background-size: contain;
         height: 10vh;
         display: flex;
         flex-direction: column;
@@ -16,7 +11,6 @@
        .text-secondary {
            font-size: 2rem;
            font-weight: 500;
-        //    margin-bottom: .5rem;
        }
 
     }
@@ -27,6 +21,16 @@
         display: grid;
         grid-template-rows: 1fr;
         grid-gap: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        &-items {
+            width: 70vw;
+            margin: 2rem auto 0 auto;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-gap: 2rem;
+        }
     }
 
     &-item {
