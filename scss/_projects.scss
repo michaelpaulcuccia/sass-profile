@@ -23,14 +23,20 @@
         grid-gap: 2rem;
     }
 
+    
     @media (max-width: 500px) {
+
+        //resize view-width, larger on smaller devices
         &-items {
-            width: 70vw;
-            margin: 2rem auto 0 auto;
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-gap: 2rem;
+            width: 65vw;
         }
+
+        &-items .first {
+            margin-top: 1rem;
+        }
+
+        
+        
     }
 
     &-item {

@@ -31,6 +31,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 500px) {
+  .home h2:nth-of-type(2) {
+    padding: 0 .75rem;
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -217,7 +223,6 @@
 
 .about .about-me {
   text-align: center;
-  margin: 1.5rem 0;
   line-height: 1.2;
   background: #343434;
   padding: .5rem;
@@ -231,12 +236,6 @@
   padding: 0 1.5rem;
 }
 
-.about .about-me h3:nth-of-type(2) {
-  margin-top: .5rem;
-  padding: .5rem;
-  border-bottom: 5px solid #ff652f;
-}
-
 .about .jobs {
   width: 60vw;
   margin: 2rem auto 0 auto;
@@ -244,7 +243,7 @@
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .about .jobs-job {
@@ -274,6 +273,12 @@
 .about footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+@media (max-width: 500px) {
+  .about .jobs {
+    margin: .25rem auto 0 auto;
+  }
 }
 
 .projects {
@@ -314,13 +319,10 @@
 
 @media (max-width: 500px) {
   .projects-items {
-    width: 70vw;
-    margin: 2rem auto 0 auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    grid-gap: 2rem;
+    width: 65vw;
+  }
+  .projects-items .first {
+    margin-top: 1rem;
   }
 }
 
